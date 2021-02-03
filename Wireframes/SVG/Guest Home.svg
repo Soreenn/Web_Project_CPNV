@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Guest_Home">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Guest_Home" data-name="Guest Home" clip-path="url(#clip-Guest_Home)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="175" height="50" transform="translate(1700 50)" fill="#fff"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="175" height="50" transform="translate(1475 50)" fill="#fff"/>
+    <text id="Connexion" transform="translate(1723 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Connexion</tspan></text>
+    <text id="S_inscrire" data-name="S&apos;inscrire" transform="translate(1506 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">S&apos;inscrire</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Ali-bis" transform="translate(617 395)" fill="#fff" font-size="120" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Ali-bis</tspan></text>
+    <text id="Une_infinité_d_annonces" data-name="Une infinité d&apos;annonces" transform="translate(541 465)" fill="#fff" font-size="50" font-family="ArialMT, Arial"><tspan x="0" y="0">Une infinité d&apos;annonces</tspan></text>
+    <text id="Veuillez_vous_identifiez" data-name="Veuillez vous identifiez" transform="translate(449 839)" fill="#fff" font-size="70" font-family="ArialMT, Arial"><tspan x="0" y="0">Veuillez vous identifiez</tspan></text>
+    <text id="Pas_de_compte_Créez_en_un_" data-name="Pas de compte ? Créez en un !" transform="translate(526 909)" fill="#fff" font-size="40" font-family="ArialMT, Arial"><tspan x="0" y="0">Pas de compte ? Créez en un !</tspan></text>
+  </g>
+</svg>

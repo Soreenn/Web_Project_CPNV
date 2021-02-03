@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Login">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Login" clip-path="url(#clip-Login)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="1380" height="750" transform="translate(240)" fill="#e8e8e8"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="1380" height="240" transform="translate(240)" fill="#c8c8c8"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="1140" height="60" transform="translate(360 390)" fill="#fff"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="1140" height="60" transform="translate(360 510)" fill="#fff"/>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="1140" height="60" transform="translate(360 630)"/>
+    <text id="Se_connecter" data-name="Se connecter" transform="translate(360 308)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se connecter</tspan></text>
+    <text id="Adresse_e-mail" data-name="Adresse e-mail" transform="translate(360 369)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Adresse e-mail</tspan></text>
+    <text id="Mot_de_passe" data-name="Mot de passe" transform="translate(360 492)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Mot de passe</tspan></text>
+    <text id="Suivant" transform="translate(858 674)" fill="#fff" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Suivant</tspan></text>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="1200" height="120" transform="translate(330 60)" fill="#fff"/>
+    <text id="LOGO" transform="translate(871 134)" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+  </g>
+</svg>

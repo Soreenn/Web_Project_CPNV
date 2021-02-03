@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Annonce_supprimer">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Annonce_supprimer" data-name="Annonce supprimer" clip-path="url(#clip-Annonce_supprimer)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="225" height="50" transform="translate(1275 50)" fill="#fff"/>
+    <text id="Se_deconnecter" data-name="Se deconnecter" transform="translate(1295 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se deconnecter</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Bienvenue_username_" data-name="Bienvenue &lt;username&gt;" transform="translate(1538 86)" fill="#fff" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Bienvenue &lt;username&gt;</tspan></text>
+    <g id="Rectangle_50" data-name="Rectangle 50" transform="translate(100 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="575" height="775" stroke="none"/>
+      <rect x="0.5" y="0.5" width="574" height="774" fill="none"/>
+    </g>
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(775 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="700" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="699" height="49" fill="none"/>
+    </g>
+    <text id="Liste_Annonces" data-name="Liste
+Annonces" transform="translate(388 590)" fill="#707070" font-size="100" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-116.699" y="0">Liste</tspan><tspan x="-241.699" y="115">Annonces</tspan></text>
+    <text id="Quelle_annonce_supprimer_" data-name="Quelle annonce supprimer ?" transform="translate(923 261)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Quelle annonce supprimer ?</tspan></text>
+    <g id="Rectangle_60" data-name="Rectangle 60" transform="translate(775 303)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="700" height="68" stroke="none"/>
+      <rect x="0.5" y="0.5" width="699" height="67" fill="none"/>
+    </g>
+    <text id="Valider" transform="translate(1137 349)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-49.197" y="0">Valider</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Other_profile">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Other_profile" data-name="Other profile" clip-path="url(#clip-Other_profile)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="225" height="50" transform="translate(1275 50)" fill="#fff"/>
+    <text id="Se_deconnecter" data-name="Se deconnecter" transform="translate(1295 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se deconnecter</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Bienvenue_username_" data-name="Bienvenue &lt;username&gt;" transform="translate(1538 86)" fill="#fff" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Bienvenue &lt;username&gt;</tspan></text>
+    <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(350 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="300" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="299" fill="none"/>
+    </g>
+    <g id="Rectangle_50" data-name="Rectangle 50" transform="translate(350 550)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_51" data-name="Rectangle 51" transform="translate(100 625)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1400" height="375" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1399" height="374" fill="none"/>
+    </g>
+    <text id="Photo_profile" data-name="Photo profile" transform="translate(408 386)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Photo profile</tspan></text>
+    <text id="Username" transform="translate(428 586)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Username</tspan></text>
+    <text id="Biographie" transform="translate(539 848)" fill="#707070" font-size="100" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Biographie</tspan></text>
+    <g id="Rectangle_68" data-name="Rectangle 68" transform="translate(775 259)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="725" height="300" stroke="none"/>
+      <rect x="0.5" y="0.5" width="724" height="299" fill="none"/>
+    </g>
+    <text id="Formulaire_de_contact" data-name="Formulaire
+de
+contact" transform="translate(1151 361)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-155.039" y="0">Formulaire</tspan><tspan x="-35.01" y="69">de</tspan><tspan x="-106.685" y="138">contact</tspan></text>
+  </g>
+</svg>

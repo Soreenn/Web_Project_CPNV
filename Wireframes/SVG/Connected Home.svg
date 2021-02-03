@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Connected_Home">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Connected_Home" data-name="Connected Home" clip-path="url(#clip-Connected_Home)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="225" height="50" transform="translate(1275 50)" fill="#fff"/>
+    <text id="Se_deconnecter" data-name="Se deconnecter" transform="translate(1295 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se deconnecter</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Bienvenue_username_" data-name="Bienvenue &lt;username&gt;" transform="translate(1538 86)" fill="#fff" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Bienvenue &lt;username&gt;</tspan></text>
+    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(450 525)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(825 525)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(1200 525)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_23" data-name="Rectangle 23" transform="translate(100 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(100 525)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(450 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(825 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_27" data-name="Rectangle 27" transform="translate(1200 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(450 950)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(825 950)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(1200 950)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_31" data-name="Rectangle 31" transform="translate(100 650)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_32" data-name="Rectangle 32" transform="translate(100 950)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_33" data-name="Rectangle 33" transform="translate(450 650)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_34" data-name="Rectangle 34" transform="translate(825 650)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(1200 650)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="275" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="274" fill="none"/>
+    </g>
+    <text id="Image_annonce" data-name="Image
+annonce" transform="translate(238 774)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-2" data-name="Image
+annonce" transform="translate(238 349)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-3" data-name="Image
+annonce" transform="translate(600 774)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-4" data-name="Image
+annonce" transform="translate(975 774)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-5" data-name="Image
+annonce" transform="translate(1350 774)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-6" data-name="Image
+annonce" transform="translate(600 349)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-7" data-name="Image
+annonce" transform="translate(975 349)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Image_annonce-8" data-name="Image
+annonce" transform="translate(1350 349)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <text id="Titre_de_l_annonce" data-name="Titre de l&apos;annonce" transform="translate(132 984)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-2" data-name="Titre de l&apos;annonce" transform="translate(494 984)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-3" data-name="Titre de l&apos;annonce" transform="translate(869 984)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-4" data-name="Titre de l&apos;annonce" transform="translate(1244 984)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-5" data-name="Titre de l&apos;annonce" transform="translate(132 559)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-6" data-name="Titre de l&apos;annonce" transform="translate(494 559)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-7" data-name="Titre de l&apos;annonce" transform="translate(869 559)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Titre_de_l_annonce-8" data-name="Titre de l&apos;annonce" transform="translate(1244 559)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+  </g>
+</svg>

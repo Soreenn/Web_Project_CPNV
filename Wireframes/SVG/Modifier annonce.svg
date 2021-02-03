@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Modifier_annonce">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Modifier_annonce" data-name="Modifier annonce" clip-path="url(#clip-Modifier_annonce)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="225" height="50" transform="translate(1275 50)" fill="#fff"/>
+    <text id="Se_deconnecter" data-name="Se deconnecter" transform="translate(1295 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se deconnecter</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Bienvenue_username_" data-name="Bienvenue &lt;username&gt;" transform="translate(1538 86)" fill="#fff" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Bienvenue &lt;username&gt;</tspan></text>
+    <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(375 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="850" height="525" stroke="none"/>
+      <rect x="0.5" y="0.5" width="849" height="524" fill="none"/>
+    </g>
+    <g id="Rectangle_37" data-name="Rectangle 37" transform="translate(100 775)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1075" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1074" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(100 850)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1400" height="150" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1399" height="149" fill="none"/>
+    </g>
+    <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(1225 775)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="49" fill="none"/>
+    </g>
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="1920" height="150" fill="#8e8e8e"/>
+    <rect id="Rectangle_41" data-name="Rectangle 41" width="1500" height="825" transform="translate(50 200)" fill="#bfbfbf"/>
+    <rect id="Rectangle_42" data-name="Rectangle 42" width="300" height="825" transform="translate(1575 200)" fill="#dfdfdf"/>
+    <rect id="Rectangle_43" data-name="Rectangle 43" width="225" height="50" transform="translate(1275 50)" fill="#fff"/>
+    <text id="Se_deconnecter-2" data-name="Se deconnecter" transform="translate(1295 84)" fill="#707070" font-size="25" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Se deconnecter</tspan></text>
+    <g id="Rectangle_44" data-name="Rectangle 44" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="400" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="399" height="99" fill="none"/>
+    </g>
+    <text id="LOGO-2" data-name="LOGO" transform="translate(166 92)" fill="#707070" font-size="40" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">LOGO</tspan></text>
+    <text id="Bienvenue_username_2" data-name="Bienvenue &lt;username&gt;" transform="translate(1538 86)" fill="#fff" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Bienvenue &lt;username&gt;</tspan></text>
+    <g id="Rectangle_45" data-name="Rectangle 45" transform="translate(100 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="225" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="224" fill="none"/>
+    </g>
+    <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(100 475)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="600" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="599" height="49" fill="none"/>
+    </g>
+    <g id="Rectangle_47" data-name="Rectangle 47" transform="translate(100 540)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="600" height="460" stroke="none"/>
+      <rect x="0.5" y="0.5" width="599" height="459" fill="none"/>
+    </g>
+    <g id="Rectangle_48" data-name="Rectangle 48" transform="translate(400 400)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="300" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="299" height="49" fill="none"/>
+    </g>
+    <text id="Description" transform="translate(125 785)" fill="#707070" font-size="100" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Description</tspan></text>
+    <text id="Titre_de_l_annonce" data-name="Titre de l&apos;annonce" transform="translate(273 509)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Titre de l&apos;annonce</tspan></text>
+    <text id="Prix" transform="translate(522 436)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Prix</tspan></text>
+    <text id="Image_annonce" data-name="Image
+annonce" transform="translate(238 324)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-86.704" y="0">Image</tspan><tspan x="-123.354" y="69">annonce</tspan></text>
+    <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(775 700)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="725" height="300" stroke="none"/>
+      <rect x="0.5" y="0.5" width="724" height="299" fill="none"/>
+    </g>
+    <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(775 225)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="725" height="50" stroke="none"/>
+      <rect x="0.5" y="0.5" width="724" height="49" fill="none"/>
+    </g>
+    <text id="Formulaire_de_modification" data-name="Formulaire de modification" transform="translate(960 261)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Formulaire de modification</tspan></text>
+    <text id="Formulaire_de_contact" data-name="Formulaire
+de
+contact" transform="translate(1151 802)" fill="#707070" font-size="60" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-155.039" y="0">Formulaire</tspan><tspan x="-35.01" y="69">de</tspan><tspan x="-106.685" y="138">contact</tspan></text>
+    <g id="Rectangle_59" data-name="Rectangle 59" transform="translate(775 303)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="725" height="68" stroke="none"/>
+      <rect x="0.5" y="0.5" width="724" height="67" fill="none"/>
+    </g>
+    <text id="Valider" transform="translate(1137 349)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-49.197" y="0">Valider</tspan></text>
+    <g id="Rectangle_63" data-name="Rectangle 63" transform="translate(775 634)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="706" height="41" stroke="none"/>
+      <rect x="0.5" y="0.5" width="705" height="40" fill="none"/>
+    </g>
+    <text id="Catégorie" transform="translate(1069 665)" fill="#707070" font-size="30" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Catégorie</tspan></text>
+  </g>
+</svg>
