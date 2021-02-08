@@ -1,0 +1,15 @@
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+}
+
+.navbar-dark .navbar-nav .nav-item{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}

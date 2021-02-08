@@ -7,3 +7,7 @@ function home(){
 function lost(){
     require "view/lost.php";
 }
+
+function login(){
+    require "view/login.php";
+}
