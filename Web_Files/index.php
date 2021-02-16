@@ -6,6 +6,9 @@ switch ($_SERVER["REQUEST_URI"]){
     case "/home" :
         home();
         break;
+    case "/login" :
+        login();
+        break;
     default:
         lost();
 }
