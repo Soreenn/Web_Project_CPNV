@@ -1,4 +1,9 @@
 <?php
+/**
+ * Author : Luke CORNAZ & Gabriel PEREIRA
+ * Date : 12.02.2021
+ * Version : 0.1
+ */
 ?>
 
 <html>
@@ -24,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">S'inscrire</a>
+                        <a class="nav-link" href="/register">S'inscrire</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Se connecter</a>
@@ -35,11 +40,25 @@
         </div>
     </div>
 </nav>
+
 <!-- Navbar end-->
 
 <!-- Page content start-->
 <?= $content; ?>
 <!-- Page content end-->
 <script src=/view/content/js/bootstrap.bundle.js></script>
+<br>
+<br>
+<footer>
+    <div class="footer-copyright">
+        <span>
+            ali-bis.ch n’est pas responsable du contenu des annonces.
+        </span>
+        <br>
+        <span>
+            © Copyright Ali-bis SA 2021. Tous droits réservés.
+        </span>
+    </div>
+</footer>
 </body>
 </html>
