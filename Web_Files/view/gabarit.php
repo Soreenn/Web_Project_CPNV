@@ -29,10 +29,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/register">S'inscrire</a>
+                        <?php
+                        session_start();
+                        ?>
+                        <?php if (!isset($_SESSION['email'])) : ?>
+                            <a class="nav-link" href="/register">S'inscrire</a>
+                        <?php endif; ?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">Se connecter</a>
+                        <?php if (isset($_SESSION['email'])) : ?>
+                            <a class="nav-link" href="/logout">Se déconnecter</a>
+                        <li class="nav-item">
+                          <span class="nav-link"><?= "Bienvenue " . ($_SESSION['email']) ?></span>
+                        <?php else : ?>
+                            <a class="nav-link" href="/login">Se connecter</a>
+                        <?php endif; ?>
                     </li>
                 </ul>
             </div>

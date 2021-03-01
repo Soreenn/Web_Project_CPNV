@@ -15,15 +15,15 @@ ob_start();
     <form method="post" class="centerForm" action = "/registerData">
         <div class="mb-3">
             <label for="userEmail" class="form-label">Entrez votre adresse mail</label>
-            <input type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp">
+            <input required type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="inputUserPsw" class="form-label">Entrez votre mot de passe</label>
-            <input type="password" class="form-control" name="password" id="inputUserPsw">
+            <input required type="password" class="form-control" name="password" id="inputUserPsw">
         </div>
         <div class="mb-3">
             <label for="inputConfirmPsw" class="form-label">Confirmer votre mot de passe</label>
-            <input type="password" class="form-control" name="passwordConfirm" id="inputConfirmPsw">
+            <input required type="password" class="form-control" name="passwordConfirm" id="inputConfirmPsw">
             <div id="passwordHelp" class="form-text">Ne partagez jamais votre mot de passe !</div>
         </div>
         <div class="alignLeft">

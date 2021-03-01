@@ -12,15 +12,15 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form class="">
+    <form method="post" class="centerForm" action = "/authentification">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Adresse e-mail :</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input required type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">Ne partagez pas votre email avec un tier.</div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Mot de passe :</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input required type="password" class="form-control" name="password" id="exampleInputPassword1">
             <div id="passwordHelp" class="form-text">Ne partagez jamais votre mot de passe.</div>
         </div>
         <div class="alignLeft">

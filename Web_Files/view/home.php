@@ -4,7 +4,6 @@
  * Date : 12.02.2021
  * Version : 0.1
  */
-
 ob_start();
 $title = "Accueil";
 ?>

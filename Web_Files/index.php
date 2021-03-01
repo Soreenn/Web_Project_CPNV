@@ -15,8 +15,14 @@ switch ($_SERVER["REQUEST_URI"]){
     case "/login" :
         login();
         break;
+    case "/authentification" :
+        authentification($_POST);
+        break;
     case "/register" :
         register();
+        break;
+    case "/logout" :
+        logout();
         break;
     case "/registerData" :
         registerData($_POST);
