@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -7,7 +8,7 @@
  */
 
 function home(){
-   require "view/home.php";
+    require "view/home.php";
 }
 
 function lost(){
@@ -30,6 +31,12 @@ function registerData($userData){
 function authentification($userData){
     require "model/data_decode.php";
     loginUser($userData);
+}
+
+function catalogue(){
+    require "model/data_decode.php";
+    $data = getAnnounce();
+    require "view/catalogue.php";
 }
 
 function logout(){

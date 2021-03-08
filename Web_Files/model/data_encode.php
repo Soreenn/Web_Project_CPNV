@@ -1,54 +1,31 @@
 <?php
 
-function addUser($userData)
+function loginUser($userData)
 {
+    $data = file_get_contents("model/data/dataTest.json", true);
+    $data = json_decode($data, true);
+    $userAlreadyExist = 0;
+    $error = 0;
 
-    if ($userData['password'] == $userData['passwordConfirm']) {
+    $i = 0;
+    $id = -1;
 
-        $data = file_get_contents("model/data/dataTest.json");
-        $data = json_decode($data, JSON_OBJECT_AS_ARRAY);
-        $userAlreadyExist = 0;
-
-        foreach ($data as $row) {
-            foreach ($row as $roow) {
-                if ($roow == $userData['email']) {
-                    $userAlreadyExist = $userAlreadyExist + 1;
-                } else {
-                    $userAlreadyExist = $userAlreadyExist + 0;
+    foreach ($data as $row) {
+        if ($row['email'] == $userData['email']) {
+            if ($row['password'] == $userData['password']) {
+                if (session_start()) {
+                    $_SESSION['email'] = $userData['email'];
                 }
+                header("Location: /home");
+                require "view/home.php";
+            } else {
+                header("Location: /login");
+                require "view/login.php";
             }
-        }
-
-        if ($userAlreadyExist == 0) {
-            echo "new user ";
-            $fullUser = array(
-                "email" => $userData['email'],
-                "password" => $userData['password']
-            );
-
-            $data = file_get_contents("model/data/dataTest.json");
-            $data = json_decode($data, JSON_OBJECT_AS_ARRAY);
-
-            $data = (!empty($data)) ? $data : [];
-
-            array_push($data, $fullUser);
-            $data = json_encode($data, JSON_PRETTY_PRINT);
-
-            file_put_contents("model/data/dataTest.json", $data);
-            echo $userData['email'];
-            if(session_start()) {
-                $_SESSION['email'] = $userData['email'];
-            }
-            header("Location: /home");
-            require "view/home.php";
         } else {
-            require "view/register.php";
-            echo "Email déjà existante !";
+            header("Location: /login");
+            require "view/login.php";
         }
-
-    } else {
-        require "view/register.php";
-        echo "Mot de passe incorrect !";
     }
 
 }

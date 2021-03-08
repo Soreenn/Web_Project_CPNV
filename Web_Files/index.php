@@ -5,13 +5,22 @@
  * Version : 0.1
  */
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require "controller/controller.php";
 
 switch ($_SERVER["REQUEST_URI"]){
     case "/" :
     case "/home" :
+    if (!isset($_SESSION['email'])){
         home();
-        break;
+    }
+    else{
+        catalogue();
+    }
+    break;
     case "/login" :
         login();
         break;

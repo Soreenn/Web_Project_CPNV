@@ -4,6 +4,9 @@
  * Date : 12.02.2021
  * Version : 0.1
  */
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <html>
@@ -17,7 +20,7 @@
 <body>
 
 <!-- Navbar start-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="/home">Ali-Bis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -29,9 +32,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <?php
-                        session_start();
-                        ?>
                         <?php if (!isset($_SESSION['email'])) : ?>
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>
@@ -51,7 +51,10 @@
         </div>
     </div>
 </nav>
-
+<br>
+<br>
+<br>
+<br>
 <!-- Navbar end-->
 
 <!-- Page content start-->

@@ -1,2 +1,14 @@
 [
+    {
+        "email": "test@cpnv.ch",
+        "password": "test"
+    },
+    {
+        "email": "policolico@pilow.com",
+        "password": "Piloti"
+    },
+    {
+        "email": "pilo@complot.com",
+        "password": "com"
+    }
 ]

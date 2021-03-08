@@ -1,0 +1,21 @@
+[
+    {
+        "title" : "Mr.Rat",
+        "desc" : "The rat is happy",
+        "price" : "45 CHF",
+        "img" : "/view/content/images/catalogue_test.jpg"
+    },
+    {
+        "title" : "Mr.Bad Rat",
+        "desc" : "The rat is bad and unhappy",
+        "price" : "45 CHF",
+        "img" : "/view/content/images/catalogue_test.jpg"
+    },
+    {
+        "title" : "Mrs.Mioumiou",
+        "desc" : "A very cute cat",
+        "price" : "Not set",
+        "img" : "/view/content/images/chat_annonce.jpg"
+    }
+
+]

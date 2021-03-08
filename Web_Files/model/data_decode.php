@@ -19,15 +19,15 @@ function loginUser($userData)
                 header("Location: /home");
                 require "view/home.php";
             } else {
-                $error = 2;
                 header("Location: /login");
                 require "view/login.php";
             }
-        } else {
-            $error = 1;
-            header("Location: /login");
-            require "view/login.php";
         }
     }
+}
 
+function getAnnounce(){
+    $data = file_get_contents("model/data/annonce.json", true);
+    $data = json_decode($data, true);
+    return $data;
 }

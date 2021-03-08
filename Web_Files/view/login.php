@@ -31,12 +31,10 @@ ob_start();
         <br>
         <br>
         <button type="reset" class="btn btn-primary">Effacer</button>
+
     </form>
 </div>
 <!--Form end-->
-
-
-</article>
 <?php
 $content = ob_get_clean();
 require 'gabarit.php';

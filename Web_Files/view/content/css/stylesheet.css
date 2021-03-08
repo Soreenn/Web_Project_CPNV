@@ -77,3 +77,7 @@ h3 {
 .navbar-toggler {
     margin-left: 90%;
 }
+
+.container-fluid\.catalogue{
+    max-width:1170px;
+}
