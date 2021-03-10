@@ -24,7 +24,7 @@ ob_start();
             <div id="passwordHelp" class="form-text">Ne partagez jamais votre mot de passe.</div>
         </div>
         <div class="alignLeft">
-            <p>Besoin d'un compte <a href="/register">S'inscrire</a>.</p>
+            <p>Besoin d'un compte ? <a href="/register">S'inscrire</a>.</p>
         </div>
         <br>
         <button type="submit" class="btn btn-primary">Se connecter</button>

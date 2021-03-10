@@ -26,6 +26,8 @@ $title = "Catalogue";
                 </div>
                 <div class="card-footer">
                     <small> <?= $info['price'] ?> </small>
+                    <br>
+                    <small class="text-muted"> Proposé par : <?= $info['owner'] ?> </small>
                 </div>
             </div>
         </div>
