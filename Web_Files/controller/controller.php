@@ -39,6 +39,10 @@ function catalogue(){
     require "view/catalogue.php";
 }
 
+function addAnnonce(){
+
+}
+
 function logout(){
     session_start();
     session_destroy();
