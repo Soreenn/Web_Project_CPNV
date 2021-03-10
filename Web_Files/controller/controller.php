@@ -40,7 +40,7 @@ function catalogue(){
 }
 
 function addAnnonce(){
-
+    require "view/addAnnonce.php";
 }
 
 function logout(){
