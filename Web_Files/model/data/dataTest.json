@@ -14,5 +14,9 @@
     {
         "email": "test2@cpnv.ch",
         "password": "test2"
+    },
+    {
+        "email": "Gabriel.Pereira@cpnv.ch",
+        "password": "gabriel"
     }
 ]
