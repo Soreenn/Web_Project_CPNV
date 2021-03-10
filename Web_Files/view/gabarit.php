@@ -40,7 +40,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>
                     </li>
-                        <a class="nav-link" href="/">Mon profile</a>
+                        <a class="nav-link" href="/profil">Mon profile</a>
                     <li class="nav-item">
                         <span class="nav-link"><?= "Bienvenue " . ($_SESSION['name']) ?></span>
                         <?php else : ?>

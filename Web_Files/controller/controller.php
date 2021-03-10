@@ -51,5 +51,5 @@ function logout(){
 }
 
 function profil(){
-
+    require "view/profil.php";
 }
