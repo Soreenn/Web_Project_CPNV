@@ -4,90 +4,27 @@
     "desc": "The rat is happy",
     "price": "45 CHF",
     "img": "/view/content/images/catalogue_test.jpg",
-    "owner": "test@cpnv.ch"
+    "owner": "test"
   },
   {
     "title": "Mr.Bad Rat",
     "desc": "The rat is bad and unhappy",
     "price": "45 CHF",
     "img": "/view/content/images/catalogue_test.jpg",
-    "owner": "test@cpnv.ch"
+    "owner": "test"
   },
   {
     "title": "Mr.Mioumiou",
     "desc": "A very cute cat",
     "price": "Not set",
     "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
+    "owner": "test"
   },
   {
     "title": "Vinderbaum",
     "desc": "A good guy",
     "price": "500'000 deutschMark",
     "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
-  },
-  {
-    "title": "Mr.Mioumiou",
-    "desc": "A very cute cat",
-    "price": "Not set",
-    "img": "/view/content/images/chat_annonce.jpg",
-    "owner": "test@cpnv.ch"
+    "owner": "test"
   }
 ]

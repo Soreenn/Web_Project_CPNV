@@ -10,5 +10,9 @@
     {
         "email": "pilo@complot.com",
         "password": "com"
+    },
+    {
+        "email": "test2@cpnv.ch",
+        "password": "test2"
     }
 ]

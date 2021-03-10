@@ -1,31 +1,36 @@
 <?php
 
-function loginUser($userData)
+function addUser($userData)
 {
-    $data = file_get_contents("model/data/dataTest.json", true);
-    $data = json_decode($data, true);
-    $userAlreadyExist = 0;
-    $error = 0;
 
-    $i = 0;
-    $id = -1;
+    if ($userData['password'] == $userData['passwordConfirm']) {
+        $fullUser = array(
+            "email" => $userData['email'],
+            "password" => $userData['password']
+        );
 
-    foreach ($data as $row) {
-        if ($row['email'] == $userData['email']) {
-            if ($row['password'] == $userData['password']) {
-                if (session_start()) {
-                    $_SESSION['email'] = $userData['email'];
-                }
-                header("Location: /home");
-                require "view/home.php";
-            } else {
-                header("Location: /login");
-                require "view/login.php";
-            }
-        } else {
-            header("Location: /login");
-            require "view/login.php";
+        $data = file_get_contents("model/data/dataTest.json");
+        $data = json_decode($data, JSON_OBJECT_AS_ARRAY);
+
+        $data = (!empty($data)) ? $data : [];
+
+        array_push($data, $fullUser);
+        $data = json_encode($data, JSON_PRETTY_PRINT);
+
+        file_put_contents("model/data/dataTest.json", $data);
+        header("Location: /home");
+
+        if(substr_count($userData['email'], ".") > 1){
+            $name = strtok($userData['email'], '.');
+        } else{
+            $name = strtok($userData['email'], '@');
         }
-    }
 
+        if (session_start()) {
+            $_SESSION['email'] = $userData['email'];
+            $_SESSION['name'] = $name;
+        }
+
+        require "/view/home.php";
+    }
 }
