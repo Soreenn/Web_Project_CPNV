@@ -21,16 +21,37 @@ ob_start();
             <label for="desc" class="form-label">Description :</label>
             <textarea required class="form-control" name="desc" id="desc"></textarea>
         </div>
-
-        <div class="alignLeft">
-            <p>Besoin d'un compte ? <a href="/register">S'inscrire</a>.</p>
+        <div class="mb-3">
+            <label for="price" class="form-label">Prix :</label>
+            <input type="number" required class="form-control" name="desc" id="desc">
         </div>
+        <div class="mb-3">
+            <label for="tags" class="form-label">Tags :</label>
+            <input type="hidden" id="tags">
+            <hr>
+            <label for="Animaux" class="form-check-label">Animaux : </label>
+            <input type="checkbox" class="form-check-input" name="Animaux" id="Animaux">
+            <br>
+            <label for="vehicle" class="form-check-label">Véhicule : </label>
+            <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">
+            <br>
+            <label for="info" class="form-check-label">Informatique : </label>
+            <input type="checkbox" class="form-check-input" name="info" id="info">
+            <br>
+            <label for="gaming" class="form-check-label">Gaming : </label>
+            <input type="checkbox" class="form-check-input" name="gaming" id="gaming">
+            <hr>
+        </div>
+        <div class="mb-3">
+            <label for="img">Photo de l'annonce : </label>
+            <input class="form-control form-control-sm" type="file" id="img" name="img">
+        </div>
+        <div class="mb-3">
+            <input required type="checkbox" class="form-check-input" name="accept" id="accept">
+            <label for="accept" class="form-check-label"><p class="text-danger">J'accepte que ma photo soit publié sur internet</p></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Publier</button>
         <br>
-        <button type="submit" class="btn btn-primary">Se connecter</button>
-        <br>
-        <br>
-        <button type="reset" class="btn btn-primary">Effacer</button>
-
     </form>
 </div>
 <!--Form end-->
