@@ -32,14 +32,14 @@ if (session_status() === PHP_SESSION_NONE) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <?php if (isset($_SESSION['email'])) : ?>
+                        <a class="nav-link" href="/logout">Se déconnecter</a>
+                    <li class="nav-item">
+                    <li class="nav-item">
                         <?php if (!isset($_SESSION['email'])) : ?>
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>
                     </li>
-                    <li class="nav-item">
-                        <?php if (isset($_SESSION['email'])) : ?>
-                        <a class="nav-link" href="/logout">Se déconnecter</a>
-                    <li class="nav-item">
                         <a class="nav-link" href="/">Mon profile</a>
                     <li class="nav-item">
                         <span class="nav-link"><?= "Bienvenue " . ($_SESSION['name']) ?></span>

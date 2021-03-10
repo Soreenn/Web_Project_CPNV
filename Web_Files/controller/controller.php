@@ -45,3 +45,7 @@ function logout(){
     header("Location: /home");
     require "view/home.php";
 }
+
+function profil(){
+
+}

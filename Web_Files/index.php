@@ -36,6 +36,14 @@ switch ($_SERVER["REQUEST_URI"]){
     case "/registerData" :
         registerData($_POST);
         break;
+    case "/profil" :
+        if (!isset($_SESSION['email'])){
+            home();
+        }
+        else{
+            profil();
+        }
+        break;
     default:
         lost();
 }
