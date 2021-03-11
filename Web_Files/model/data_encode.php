@@ -39,15 +39,29 @@ function dataAnnonce($annonceInfo)
 {
     $file_name = $_FILES['img']['name'];
     $file_tmp = $_FILES['img']['tmp_name'];
-    move_uploaded_file($file_tmp,"view/content/images/".$file_name);
+    $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
+    if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
+        move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
+    } else {
+        header("Location: /home");
+        require "/view/home.php";
+    }
 
-    $annonce = array(
-        "title" => $annonceInfo['title'],
-        "desc" => $annonceInfo['desc'],
-        "price" => $annonceInfo['price'] . " CHF",
-        "img" => "view/content/images/" . $file_name,
-        "owner" => $_SESSION['name']
-    );
+    $needle = '<script>';
+
+    if (strpos($annonceInfo['desc'], $needle) || strpos($annonceInfo['title'], $needle) || strpos($annonceInfo['price'], $needle) !== false) {
+        header("Location: /home");
+        require "/view/home.php";
+    } else {
+        $annonce = array(
+            "title" => $annonceInfo['title'],
+            "desc" => $annonceInfo['desc'],
+            "price" => $annonceInfo['price'] . " CHF",
+            "img" => "view/content/images/" . $file_name,
+            "owner" => $_SESSION['name']
+        );
+    }
+
     $data = file_get_contents("model/data/annonce.json");
     $data = json_decode($data, JSON_OBJECT_AS_ARRAY);
     $data = (!empty($data)) ? $data : [];
