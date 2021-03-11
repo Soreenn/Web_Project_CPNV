@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/">
+    <form method="post" class="centerForm" action = "/annonceInfoEncode"  enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Titre :</label>
             <input type="text" required class="form-control" name="title" id="title">
@@ -23,7 +23,7 @@ ob_start();
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prix :</label>
-            <input type="number" required class="form-control" name="desc" id="desc">
+            <input type="number" required class="form-control" name="price" id="price">
         </div>
         <div class="mb-3">
             <label for="tags" class="form-label">Tags :</label>

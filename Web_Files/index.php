@@ -11,16 +11,15 @@ if (session_status() === PHP_SESSION_NONE) {
 
 require "controller/controller.php";
 
-switch ($_SERVER["REQUEST_URI"]){
+switch ($_SERVER["REQUEST_URI"]) {
     case "/" :
     case "/home" :
-    if (!isset($_SESSION['email'])){
-        home();
-    }
-    else{
-        catalogue();
-    }
-    break;
+        if (!isset($_SESSION['email'])) {
+            home();
+        } else {
+            catalogue();
+        }
+        break;
     case "/login" :
         login();
         break;
@@ -37,21 +36,25 @@ switch ($_SERVER["REQUEST_URI"]){
         registerData($_POST);
         break;
     case "/addAnnonce":
-        if (!isset($_SESSION['email'])){
+        if (!isset($_SESSION['email'])) {
             home();
-        }
-        else{
+        } else {
             addAnnonce();
         }
         break;
     case "/profil" :
-        if (!isset($_SESSION['email'])){
+        if (!isset($_SESSION['email'])) {
             home();
-        }
-        else{
+        } else {
             profil();
         }
         break;
+    case "/annonceInfoEncode" :
+        if (!isset($_POST)) {
+            home();
+        } else {
+            annonceInfoEncode($_POST);
+        }
     default:
         lost();
 }

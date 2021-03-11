@@ -50,6 +50,11 @@ function logout(){
     require "view/home.php";
 }
 
+function annonceInfoEncode($annonceInfo){
+    require "model/data_encode.php";
+    dataAnnonce($annonceInfo);
+}
+
 function profil(){
     require "view/profil.php";
 }

@@ -2,21 +2,5 @@
     {
         "email": "test@cpnv.ch",
         "password": "test"
-    },
-    {
-        "email": "policolico@pilow.com",
-        "password": "Piloti"
-    },
-    {
-        "email": "pilo@complot.com",
-        "password": "com"
-    },
-    {
-        "email": "test2@cpnv.ch",
-        "password": "test2"
-    },
-    {
-        "email": "Gabriel.Pereira@cpnv.ch",
-        "password": "gabriel"
     }
 ]
