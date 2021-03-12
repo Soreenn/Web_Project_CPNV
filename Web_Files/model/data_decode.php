@@ -14,10 +14,12 @@ function loginUser($userData)
         if ($row['email'] == $userData['email']) {
             if ($row['password'] == $userData['password']) {
 
-                if(substr_count($userData['email'], ".") > 1){
+                if (substr_count($userData['email'], ".") > 1) {
                     $name = strtok($userData['email'], '.');
-                } elseif(substr_count($userData['email'], ".") < 2){
+                } elseif (substr_count($userData['email'], ".") < 2) {
                     $name = strtok($userData['email'], '@');
+                } elseif (substr_count($userData['email'], "-") > 0) {
+                    $name = strtok($userData['email'], '-');
                 }
 
                 if (session_start()) {
@@ -34,7 +36,8 @@ function loginUser($userData)
     }
 }
 
-function getAnnounce(){
+function getAnnounce()
+{
     $data = file_get_contents("model/data/annonce.json", true);
     $data = json_decode($data, true);
     return $data;
