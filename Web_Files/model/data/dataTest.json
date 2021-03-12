@@ -6,5 +6,10 @@
     {
         "email": "tamaman.cordialement@cpnv.ch",
         "password": "tusauraspas"
+    },
+    {
+        "email": "gabriel.machado-pereira@cpnv.ch",
+        "password": "test",
+        "pdp": "view\/content\/images\/large.gif"
     }
 ]

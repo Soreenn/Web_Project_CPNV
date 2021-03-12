@@ -2,11 +2,21 @@
 
 function addUser($userData)
 {
+    $file_name = $_FILES['img']['name'];
+    $file_tmp = $_FILES['img']['tmp_name'];
+    $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
+    if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
+        move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
+    } else {
+        header("Location: /register");
+        require "/view/register.php";
+    }
 
     if ($userData['password'] == $userData['passwordConfirm']) {
         $fullUser = array(
             "email" => $userData['email'],
-            "password" => $userData['password']
+            "password" => $userData['password'],
+            "pdp" => "view/content/images/" . $file_name
         );
 
         $data = file_get_contents("model/data/dataTest.json");
@@ -29,6 +39,7 @@ function addUser($userData)
         if (session_start()) {
             $_SESSION['email'] = $userData['email'];
             $_SESSION['name'] = $name;
+            $_SESSION['pdp'] = "view/content/images/" . $file_name;
         }
 
         require "/view/home.php";

@@ -9,5 +9,16 @@
         "info": "on",
         "vehicle": null,
         "gaming": "on"
+    },
+    {
+        "title": "Benjamin Fontana",
+        "desc": "inutile",
+        "price": "-1 CHF",
+        "img": "view\/content\/images\/bfa.png",
+        "owner": "tamaman",
+        "animaux": null,
+        "info": null,
+        "vehicle": null,
+        "gaming": null
     }
 ]

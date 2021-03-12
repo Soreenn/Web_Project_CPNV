@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/registerData">
+    <form method="post" class="centerForm" action = "/registerData" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="userEmail" class="form-label">Entrez votre adresse mail</label>
             <input required type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp">
@@ -25,6 +25,10 @@ ob_start();
             <label for="inputConfirmPsw" class="form-label">Confirmer votre mot de passe</label>
             <input required type="password" class="form-control" name="passwordConfirm" id="inputConfirmPsw">
             <div id="passwordHelp" class="form-text">Ne partagez jamais votre mot de passe !</div>
+        </div>
+        <div class="mb-3">
+            <label for="img">Photo de profile : </label>
+            <input class="form-control form-control-sm" type="file" id="img" name="img">
         </div>
         <div class="alignLeft">
             <p>Vous possédez déjà un compte ? <a href="/login">Se connecter</a>.</p>
