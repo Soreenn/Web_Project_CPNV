@@ -21,10 +21,10 @@ function loginUser($userData)
                 } elseif (substr_count($userData['email'], "-") > 0) {
                     $name = strtok($userData['email'], '-');
                 }
-
                 if (session_start()) {
                     $_SESSION['email'] = $userData['email'];
                     $_SESSION['name'] = $name;
+                    $_SESSION['pdp'] = $row['pdp'];
                 }
                 header("Location: /home");
                 require "view/home.php";
