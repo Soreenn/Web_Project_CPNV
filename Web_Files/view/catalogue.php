@@ -21,6 +21,18 @@ $title = "Catalogue";
             <div class="card h-100">
                 <img src="<?= $info['img'] ?>" class="card-img-top" alt="...">
                 <div class="card-body">
+                    <?php if ($info['animaux'] !== null) : ?>
+                    <span class="badge rounded-pill bg-success">Animaux</span>
+                    <?php endif ; ?>
+                    <?php if ($info['vehicle'] !== null ) : ?>
+                        <span class="badge rounded-pill bg-warning text-dark">Véhicule</span>
+                    <?php endif ; ?>
+                    <?php if ($info['info'] !== null) : ?>
+                        <span class="badge rounded-pill bg-primary">Informatique</span>
+                    <?php endif ; ?>
+                    <?php if ($info['gaming'] !== null) : ?>
+                        <span class="badge rounded-pill bg-danger">Gaming</span>
+                    <?php endif ; ?>
                     <h5 class="card-title"><?= $info['title'] ?></h5>
                     <p class="card-text"><?= $info['desc'] ?></p>
                 </div>

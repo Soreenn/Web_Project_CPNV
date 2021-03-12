@@ -58,7 +58,11 @@ function dataAnnonce($annonceInfo)
             "desc" => $annonceInfo['desc'],
             "price" => $annonceInfo['price'] . " CHF",
             "img" => "view/content/images/" . $file_name,
-            "owner" => $_SESSION['name']
+            "owner" => $_SESSION['name'],
+            "animaux" => $annonceInfo['animaux'],
+            "info" => $annonceInfo['info'],
+            "vehicle" => $annonceInfo['vehicle'],
+            "gaming" => $annonceInfo['gaming']
         );
     }
 
@@ -71,5 +75,5 @@ function dataAnnonce($annonceInfo)
     file_put_contents("model/data/annonce.json", $data);
 
     header("Location: /home");
-    require "/view/home.php";
+    require "view/home.php";
 }

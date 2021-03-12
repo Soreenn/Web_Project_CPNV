@@ -30,7 +30,7 @@ ob_start();
             <input type="hidden" id="tags">
             <hr>
             <label for="Animaux" class="form-check-label">Animaux : </label>
-            <input type="checkbox" class="form-check-input" name="Animaux" id="Animaux">
+            <input type="checkbox" class="form-check-input" name="animaux" id="Animaux">
             <br>
             <label for="vehicle" class="form-check-label">Véhicule : </label>
             <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">

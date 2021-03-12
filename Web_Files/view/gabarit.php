@@ -34,14 +34,17 @@ if (session_status() === PHP_SESSION_NONE) {
                     <li class="nav-item">
                         <?php if (isset($_SESSION['email'])) : ?>
                         <a class="nav-link" href="/logout">Se déconnecter</a>
-                        <?php if (!isset($_SESSION['email'])) : ?>
+                        <?php endif; ?>
+                    </li>
+                    <li class="nav-item">
+                        <?php if (isset($_SESSION['email'])) : ?>
+                        <a class="nav-link" href="/profile">Mon profile</a>
+                        <?php else : ?>
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/profile">Mon profile</a>
-                    </li>
-                    <li class="nav-item">
+                        <?php if (isset($_SESSION['email'])) : ?>
                         <span class="nav-link"><?= "Bienvenue " . ($_SESSION['name']) ?></span>
                         <?php else : ?>
                             <a class="nav-link" href="/login">Se connecter</a>
