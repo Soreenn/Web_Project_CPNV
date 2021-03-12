@@ -8,10 +8,16 @@ ob_start();
 $title = "Profile";
 ?>
 
-    <h2>Profile de <?= $_SESSION['name'] ?></h2>
-    <br>
+    <div>
+        <div>
+            <h2>Profile de <?= $_SESSION['name'] ?></h2>
+        </div>
+        <br>
+        <div class="alignPDP">
+            <img src="<?= $_SESSION['pdp'] ?>" class="rounded-circle">
+        </div>
+    </div>
     <!--Form start-->
-    <img src="<?= $_SESSION['pdp'] ?>" class="rounded mx-auto d-block" alt="...">
     <div class="center">
         <form method="post" class="centerForm" action="/addAnnonce">
             <button type="submit" class="btn btn-primary">Créer une annonce</button>
