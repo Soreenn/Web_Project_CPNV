@@ -29,9 +29,11 @@ $title = "Profile";
             <br>
             <br>
         </form>
-        <form method="post" class="centerForm" action="/">
-            <button type="submit" class="btn btn-primary">Supprimer une annonce</button>
-        </form>
+        <?php foreach ($_SESSION['cartSnow'] as $key => $row) { ?>
+            <form method="get" class="centerForm" action="/index.php?action=selAnnonce&key=<?= $key ?>">
+                <button type="submit" class="btn btn-primary">Supprimer une annonce</button>
+            </form>
+        <?php } ?>
     </div>
     <!--Form end-->
 

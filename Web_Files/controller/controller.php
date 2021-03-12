@@ -58,3 +58,9 @@ function annonceInfoEncode($annonceInfo){
 function profil(){
     require "view/profil.php";
 }
+
+function delAnnonce($index){
+    array_splice($_SESSION['cartSnow'], $index, 1);
+
+    require "view/cart.php";
+}
