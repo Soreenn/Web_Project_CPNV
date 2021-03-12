@@ -12,7 +12,7 @@ $title = "Profile";
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/">
+    <form method="post" class="centerForm" action = "/addAnnonce">
         <button type="submit" class="btn btn-primary">Créer une annonce</button>
         <br>
         <br>

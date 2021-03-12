@@ -59,10 +59,10 @@ function dataAnnonce($annonceInfo)
             "price" => $annonceInfo['price'] . " CHF",
             "img" => "view/content/images/" . $file_name,
             "owner" => $_SESSION['name'],
-            "animaux" => $annonceInfo['animaux'],
-            "info" => $annonceInfo['info'],
-            "vehicle" => $annonceInfo['vehicle'],
-            "gaming" => $annonceInfo['gaming']
+            "animaux" => array_search('animaux', $annonceInfo, true) ? $annonceInfo['animaux'] : null,
+            "info" => array_search('info', $annonceInfo, true) ? $annonceInfo['info'] : null,
+            "vehicle" => array_search('vehicle', $annonceInfo, true) ? $annonceInfo['vehicle'] : null,
+            "gaming" => array_search('gaming', $annonceInfo, true) ? $annonceInfo['gaming'] : null
         );
     }
 

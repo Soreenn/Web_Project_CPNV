@@ -9,38 +9,5 @@
         "info": "on",
         "vehicle": null,
         "gaming": "on"
-    },
-    {
-        "title": "BodyPillows Waifu",
-        "desc": "Jamais utilis\u00e9 mais en parfaite \u00e9tat.",
-        "price": "40 CHF",
-        "img": "view\/content\/images\/tamaki.jpg",
-        "owner": "test",
-        "animaux": null,
-        "info": null,
-        "vehicle": null,
-        "gaming": "on"
-    },
-    {
-        "title": "Daikimura Nami",
-        "desc": "Jamais utilis\u00e9 (sauf une fois au chalet)",
-        "price": "40 CHF",
-        "img": "view\/content\/images\/namichan.jpg",
-        "owner": "test",
-        "animaux": null,
-        "info": null,
-        "vehicle": null,
-        "gaming": "on"
-    },
-    {
-        "title": "Daikimura Maki",
-        "desc": "Jamais utilis\u00e9 oklm le reuf",
-        "price": "40 CHF",
-        "img": "view\/content\/images\/19830715_family_computer.jpg",
-        "owner": "test",
-        "animaux": null,
-        "info": null,
-        "vehicle": null,
-        "gaming": "on"
     }
 ]

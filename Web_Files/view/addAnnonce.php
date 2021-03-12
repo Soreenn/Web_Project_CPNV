@@ -29,8 +29,8 @@ ob_start();
             <label for="tags" class="form-label">Tags :</label>
             <input type="hidden" id="tags">
             <hr>
-            <label for="Animaux" class="form-check-label">Animaux : </label>
-            <input type="checkbox" class="form-check-input" name="animaux" id="Animaux">
+            <label for="animaux" class="form-check-label">Animaux : </label>
+            <input type="checkbox" class="form-check-input" name="animaux" id="animaux">
             <br>
             <label for="vehicle" class="form-check-label">Véhicule : </label>
             <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">

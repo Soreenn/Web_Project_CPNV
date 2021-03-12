@@ -42,7 +42,7 @@ switch ($_SERVER["REQUEST_URI"]) {
             addAnnonce();
         }
         break;
-    case "/profil" :
+    case "/profile" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
