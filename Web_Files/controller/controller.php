@@ -70,3 +70,9 @@ function modAnnoncePost($postId){
     $data = getAnnounce();
     require "view/modAnnoncePost.php";
 }
+
+function delAnnoncePost(){
+    require "model/data_decode.php";
+    $data = getAnnounce();
+    require "view/modAnnoncePost.php";
+}

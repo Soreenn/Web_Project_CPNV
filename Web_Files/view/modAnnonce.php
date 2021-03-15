@@ -7,8 +7,7 @@
 ob_start();
 $title = "Modifier annonce";
 ?>
-
-    <!--Home start-->
+    <!--Add start-->
     <html>
     <head>
         <meta charset="utf-8">
@@ -24,6 +23,7 @@ $title = "Modifier annonce";
             </form>
         <?php endif; ?>
     <?php endforeach; ?>
+    <!--Add end-->
     </body>
     </html>
 
