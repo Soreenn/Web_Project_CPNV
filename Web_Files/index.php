@@ -70,13 +70,26 @@ switch ($_SERVER["REQUEST_URI"]) {
             modAnnoncePost($_POST);
         }
         break;
-    case "/delAnnoncePost" :
+    case "/delAnnonce" :
+        if (!isset($_SESSION['email'])) {
+            home();
+        } else {
+            delAnnonce();
+        }
+        break;
+    case "/delAnnonceArray" :
         if (!isset($_POST)) {
             home();
         } else {
-            delAnnoncePost($_POST);
+            delAnnonceArray($_POST);
         }
         break;
+    case "/modAnnoncePush" :
+        if (!isset($_POST)) {
+            home();
+        } else {
+            modAnnoncePush($_POST);
+        }
     default:
         lost();
 }

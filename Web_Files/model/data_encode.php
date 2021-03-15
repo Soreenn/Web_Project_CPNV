@@ -68,7 +68,7 @@ function dataAnnonce($annonceInfo)
         header_remove();
         header("Location: /home");
     } else {
-        $number = rand (1, 1000000);
+        $number = rand(1, 1000000);
         $annonce = array(
             "annonceId" => $number,
             "title" => $annonceInfo['title'],
@@ -76,10 +76,10 @@ function dataAnnonce($annonceInfo)
             "price" => $annonceInfo['price'] . " CHF",
             "img" => "view/content/images/" . $file_name,
             "owner" => $_SESSION['name'],
-            "animaux" => array_search('animaux', $annonceInfo, true) ? $annonceInfo['animaux'] : null,
-            "info" => array_search('info', $annonceInfo, true) ? $annonceInfo['info'] : null,
-            "vehicle" => array_search('vehicle', $annonceInfo, true) ? $annonceInfo['vehicle'] : null,
-            "gaming" => array_search('gaming', $annonceInfo, true) ? $annonceInfo['gaming'] : null,
+            "animaux" => isset($annonceInfo['animaux']) ? $annonceInfo['animaux'] : null,
+            "info" => isset($annonceInfo['info']) ? $annonceInfo['info'] : null,
+            "vehicle" => isset($annonceInfo['vehicle']) ? $annonceInfo['vehicle'] : null,
+            "gaming" => isset($annonceInfo['gaming']) ? $annonceInfo['gaming'] : null,
             "ownerFullEmail" => $_SESSION['email']
         );
     }
@@ -92,5 +92,65 @@ function dataAnnonce($annonceInfo)
     $data = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents("model/data/annonce.json", $data);
     header_remove();
+    header("Location: /home");
+}
+
+function modAnnonceEncode($annonceInfo)
+{
+    $file_name = $_FILES['img']['name'];
+    $file_tmp = $_FILES['img']['tmp_name'];
+    $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
+    if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
+        move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
+    } else {
+        header_remove();
+        header("Location: /home");
+    }
+
+    $needle = '<script>';
+
+    if (strpos($annonceInfo['desc'], $needle) || strpos($annonceInfo['title'], $needle) || strpos($annonceInfo['price'], $needle) !== false) {
+        header("Location: /home");
+    } else {
+        $number = rand(1, 1000000);
+        $annonce = array(
+            "annonceId" => $number,
+            "title" => $annonceInfo['title'],
+            "desc" => $annonceInfo['desc'],
+            "price" => $annonceInfo['price'] . " CHF",
+            "img" => "view/content/images/" . $file_name,
+            "owner" => $_SESSION['name'],
+            "animaux" => isset($annonceInfo['animaux']) ? $annonceInfo['animaux'] : null,
+            "info" => isset($annonceInfo['info']) ? $annonceInfo['info'] : null,
+            "vehicle" => isset($annonceInfo['vehicle']) ? $annonceInfo['vehicle'] : null,
+            "gaming" => isset($annonceInfo['gaming']) ? $annonceInfo['gaming'] : null,
+            "ownerFullEmail" => $_SESSION['email']
+        );
+    }
+
+    $data = file_get_contents("model/data/annonce.json");
+    $data = json_decode($data, true);
+    $arr_index = array();
+
+    foreach ($data as $key => $value) {
+        if ($value['annonceId'] == $_SESSION['postId']) {
+            $arr_index[] = $key;
+        }
+    }
+
+    foreach ($arr_index as $i) {
+        unset($data[$i]);
+    }
+
+    $data = array_values($data);
+
+    $data = (!empty($data)) ? $data : [];
+
+    array_push($data, $annonce);
+    $data = json_encode($data, JSON_PRETTY_PRINT);
+
+    unset($_SESSION['postId']);
+
+    file_put_contents("model/data/annonce.json", $data);
     header("Location: /home");
 }

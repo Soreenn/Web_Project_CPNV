@@ -70,8 +70,18 @@ function modAnnoncePost($postId){
     require "view/modAnnoncePost.php";
 }
 
-function delAnnoncePost(){
+function delAnnonce(){
     require "model/data_decode.php";
     $data = getAnnounce();
-    require "view/modAnnoncePost.php";
+    require "view/delAnnonce.php";
+}
+
+function modAnnoncePush($data){
+    require "model/data_encode.php";
+    modAnnonceEncode($data);
+}
+
+function delAnnonceArray($postId){
+    require "model/data_decode.php";
+    deletePost($postId);
 }
