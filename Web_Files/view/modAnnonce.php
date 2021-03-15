@@ -16,7 +16,7 @@ $title = "Modifier annonce";
     <body>
     <?php foreach ($data as $info) : ?>
         <?php if ($info['ownerFullEmail'] == $_SESSION['email']) : ?>
-            <form class="center" method="post" action="">
+            <form class="center" method="post" action="/modAnnoncePost">
                 <input class="form-check-input" type="hidden" name="postId" value="<?= $info['annonceId'] ?>">
                 <label style="font-size: 20px" class="form-check-label"><?= $info['title'] ?></label>
                 <br>

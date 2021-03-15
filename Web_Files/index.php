@@ -55,14 +55,18 @@ switch ($_SERVER["REQUEST_URI"]) {
         } else {
             annonceInfoEncode($_POST);
         }
-        case "/modAnnonce" :
-            modAnnonce();
-            break;
-    case "/delAnnonce" :
+    case "/modAnnonce" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
-            delAnnonce();
+            modAnnonce();
+        }
+        break;
+    case "/modAnnoncePost" :
+        if (!isset($_POST)) {
+            home();
+        } else {
+            modAnnoncePost($_POST);
         }
         break;
     default:

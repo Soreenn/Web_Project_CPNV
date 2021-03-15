@@ -65,8 +65,8 @@ function modAnnonce(){
     require "view/modAnnonce.php";
 }
 
-function delAnnonce(){
+function modAnnoncePost($postId){
     require "model/data_decode.php";
     $data = getAnnounce();
-    require "view/delAnnonce.php";
+    require "view/modAnnoncePost.php";
 }
