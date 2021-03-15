@@ -29,7 +29,7 @@ $title = "Profile";
             <br>
             <br>
         </form>
-            <form method="get" class="centerForm" action="/">
+            <form method="get" class="centerForm" action="/delAnnonce">
                 <button type="submit" class="btn btn-primary">Supprimer une annonce</button>
             </form>
     </div>

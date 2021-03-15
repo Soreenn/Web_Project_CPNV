@@ -58,6 +58,13 @@ switch ($_SERVER["REQUEST_URI"]) {
         case "/modAnnonce" :
             modAnnonce();
             break;
+    case "/delAnnonce" :
+        if (!isset($_SESSION['email'])) {
+            home();
+        } else {
+            delAnnonce();
+        }
+        break;
     default:
         lost();
 }

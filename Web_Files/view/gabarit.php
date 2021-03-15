@@ -33,19 +33,19 @@ if (session_status() === PHP_SESSION_NONE) {
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <?php if (isset($_SESSION['email'])) : ?>
-                        <a class="nav-link" href="/logout">Se déconnecter</a>
+                            <a class="nav-link" href="/logout">Se déconnecter</a>
                         <?php endif; ?>
                     </li>
                     <li class="nav-item">
                         <?php if (isset($_SESSION['email'])) : ?>
-                        <a class="nav-link" href="/profile">Mon profile</a>
+                            <a class="nav-link" href="/profile">Mon profile</a>
                         <?php else : ?>
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>
                     </li>
                     <li class="nav-item">
                         <?php if (isset($_SESSION['email'])) : ?>
-                        <span class="nav-link"><?= "Bienvenue " . ($_SESSION['name']) ?></span>
+                            <span class="nav-link"><?= "Bienvenue " . ($_SESSION['name']) ?></span>
                         <?php else : ?>
                             <a class="nav-link" href="/login">Se connecter</a>
                         <?php endif; ?>
@@ -68,7 +68,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <script src=/view/content/js/bootstrap.bundle.js></script>
 <br>
 <br>
-<footer>
+<!-- <footer>
     <div class="footer-copyright">
         <span>
             ali-bis.ch n’est pas responsable du contenu des annonces.
@@ -78,6 +78,6 @@ if (session_status() === PHP_SESSION_NONE) {
             © Copyright Ali-bis SA 2021. Tous droits réservés.
         </span>
     </div>
-</footer>
+</footer> -->
 </body>
 </html>
