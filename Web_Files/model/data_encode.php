@@ -12,7 +12,6 @@ function addUser($userData)
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
         move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
     } else {
-        header_remove();
         header("Location: /register");
     }
 
@@ -45,7 +44,6 @@ function addUser($userData)
             $_SESSION['pdp'] = "view/content/images/" . $file_name;
         }
 
-        header_remove();
         header("Location: /home");
     }
 }
