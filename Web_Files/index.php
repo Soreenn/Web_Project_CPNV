@@ -42,13 +42,6 @@ switch ($_SERVER["REQUEST_URI"]) {
             addAnnonce();
         }
         break;
-    case "/delAnnonce":
-        if (!isset($_SESSION['email'])) {
-            home();
-        } else {
-            delAnnonce($_GET['key']);
-        }
-        break;
     case "/profile" :
         if (!isset($_SESSION['email'])) {
             home();
