@@ -14,7 +14,7 @@ $title = "Profile";
         </div>
         <br>
         <div class="alignPDP">
-            <img src="<?= $_SESSION['pdp'] ?>" class="rounded-circle">
+            <img src="<?= $_SESSION['pdp'] ?>" class="rounded-circle" style="width: 300px; height: 300px">
         </div>
     </div>
     <!--Form start-->

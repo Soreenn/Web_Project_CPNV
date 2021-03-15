@@ -73,7 +73,8 @@ function dataAnnonce($annonceInfo)
             "animaux" => array_search('animaux', $annonceInfo, true) ? $annonceInfo['animaux'] : null,
             "info" => array_search('info', $annonceInfo, true) ? $annonceInfo['info'] : null,
             "vehicle" => array_search('vehicle', $annonceInfo, true) ? $annonceInfo['vehicle'] : null,
-            "gaming" => array_search('gaming', $annonceInfo, true) ? $annonceInfo['gaming'] : null
+            "gaming" => array_search('gaming', $annonceInfo, true) ? $annonceInfo['gaming'] : null,
+            "ownerFullEmail" => $_SESSION['email']
         );
     }
 
