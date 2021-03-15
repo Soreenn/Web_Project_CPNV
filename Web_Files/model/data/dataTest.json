@@ -1,16 +1,2 @@
 [
-    {
-        "email": "test@cpnv.ch",
-        "password": "test"
-    },
-    {
-        "email": "gabriel.machado-pereira@cpnv.ch",
-        "password": "test",
-        "pdp": "view\/content\/images\/large.gif"
-    },
-    {
-        "email": "luke.cornaz@cpnv.ch",
-        "password": "luke",
-        "pdp": "view\/content\/images\/Benimaru.png"
-    }
 ]
