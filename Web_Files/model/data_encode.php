@@ -64,7 +64,9 @@ function dataAnnonce($annonceInfo)
         header("Location: /home");
         require "/view/home.php";
     } else {
+        $number = rand (1, 1000000);
         $annonce = array(
+            "annonceId" => $number,
             "title" => $annonceInfo['title'],
             "desc" => $annonceInfo['desc'],
             "price" => $annonceInfo['price'] . " CHF",

@@ -24,7 +24,7 @@ $title = "Profile";
             <br>
             <br>
         </form>
-        <form method="post" class="centerForm" action="/">
+        <form method="post" class="centerForm" action="/modAnnonce">
             <button type="submit" class="btn btn-primary">Modifier une annonce</button>
             <br>
             <br>

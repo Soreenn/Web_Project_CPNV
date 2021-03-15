@@ -55,6 +55,9 @@ switch ($_SERVER["REQUEST_URI"]) {
         } else {
             annonceInfoEncode($_POST);
         }
+        case "/modAnnonce" :
+            modAnnonce();
+            break;
     default:
         lost();
 }

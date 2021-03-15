@@ -58,3 +58,9 @@ function annonceInfoEncode($annonceInfo){
 function profil(){
     require "view/profil.php";
 }
+
+function modAnnonce(){
+    require "model/data_decode.php";
+    $data = getAnnounce();
+    require "view/modAnnonce.php";
+}
