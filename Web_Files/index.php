@@ -55,9 +55,20 @@ switch ($_SERVER["REQUEST_URI"]) {
         } else {
             annonceInfoEncode($_POST);
         }
-        case "/modAnnonce" :
+    case "/modAnnonce" :
+        if (!isset($_SESSION['email'])) {
+            home();
+        } else {
             modAnnonce();
-            break;
+        }
+        break;
+    case "/modAnnoncePost" :
+        if (!isset($_POST)) {
+            home();
+        } else {
+            modAnnoncePost($_POST);
+        }
+        break;
     default:
         lost();
 }
