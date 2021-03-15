@@ -70,6 +70,13 @@ switch ($_SERVER["REQUEST_URI"]) {
             modAnnoncePost($_POST);
         }
         break;
+    case "/delAnnoncePost" :
+        if (!isset($_POST)) {
+            home();
+        } else {
+            delAnnoncePost($_POST);
+        }
+        break;
     default:
         lost();
 }
