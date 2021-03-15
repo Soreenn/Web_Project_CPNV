@@ -4,6 +4,7 @@
  * Date : 12.02.2021
  * Version : 0.1
  */
+header_remove();
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();

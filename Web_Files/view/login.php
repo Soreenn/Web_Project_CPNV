@@ -5,7 +5,7 @@
  * Version : 0.1
  */
 $title = 'Login';
-
+header_remove();
 ob_start();
 ?>
 <h2>Connexion</h2>

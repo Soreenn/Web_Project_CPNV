@@ -1,6 +1,5 @@
-
 <?php
-
+header_remove();
 /**
  * Author : Luke CORNAZ & Gabriel PEREIRA
  * Date : 12.02.2021
@@ -46,8 +45,8 @@ function addAnnonce(){
 function logout(){
     session_start();
     session_destroy();
+    header_remove();
     header("Location: /home");
-    require "view/home.php";
 }
 
 function annonceInfoEncode($annonceInfo){

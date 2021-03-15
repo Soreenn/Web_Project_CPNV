@@ -1,5 +1,9 @@
 <?php
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 function addUser($userData)
 {
     $file_name = $_FILES['img']['name'];
@@ -8,8 +12,8 @@ function addUser($userData)
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
         move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
     } else {
+        header_remove();
         header("Location: /register");
-        require "/view/register.php";
     }
 
     if ($userData['password'] == $userData['passwordConfirm']) {
@@ -28,7 +32,6 @@ function addUser($userData)
         $data = json_encode($data, JSON_PRETTY_PRINT);
 
         file_put_contents("model/data/dataTest.json", $data);
-        header("Location: /home");
 
         if (substr_count($userData['email'], ".") > 1) {
             $name = strtok($userData['email'], '.');
@@ -42,7 +45,8 @@ function addUser($userData)
             $_SESSION['pdp'] = "view/content/images/" . $file_name;
         }
 
-        require "/view/home.php";
+        header_remove();
+        header("Location: /home");
     }
 }
 
@@ -54,15 +58,15 @@ function dataAnnonce($annonceInfo)
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
         move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
     } else {
+        header_remove();
         header("Location: /home");
-        require "/view/home.php";
     }
 
     $needle = '<script>';
 
     if (strpos($annonceInfo['desc'], $needle) || strpos($annonceInfo['title'], $needle) || strpos($annonceInfo['price'], $needle) !== false) {
+        header_remove();
         header("Location: /home");
-        require "/view/home.php";
     } else {
         $number = rand (1, 1000000);
         $annonce = array(
@@ -87,7 +91,6 @@ function dataAnnonce($annonceInfo)
     array_push($data, $annonce);
     $data = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents("model/data/annonce.json", $data);
-
+    header_remove();
     header("Location: /home");
-    require "view/home.php";
 }

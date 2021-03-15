@@ -1,4 +1,9 @@
 <?php
+header_remove();
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 function loginUser($userData)
 {
@@ -27,10 +32,8 @@ function loginUser($userData)
                     $_SESSION['pdp'] = $row['pdp'];
                 }
                 header("Location: /home");
-                require "view/home.php";
             } else {
                 header("Location: /login");
-                require "view/login.php";
             }
         }
     }
