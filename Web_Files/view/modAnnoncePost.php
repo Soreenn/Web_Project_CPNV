@@ -46,6 +46,9 @@ $_SESSION['postId'] = $postId['postId']
                     <br>
                     <label for="gaming" class="form-check-label">Gaming : </label>
                     <input <?php if ($info['gaming'] == "on") echo "checked"; ?> type="checkbox" class="form-check-input" name="gaming" id="gaming">
+                    <br>
+                    <label for="anime" class="form-check-label">Anime : </label>
+                    <input <?php if ($info['anime'] == "on") echo "checked"; ?> type="checkbox" class="form-check-input" name="anime" id="anime">
                     <hr>
                 </div>
                 <div class="mb-3">

@@ -34,6 +34,9 @@ $title = "Catalogue";
                     <?php if ($info['gaming'] !== null) : ?>
                         <span class="badge rounded-pill bg-danger">Gaming</span>
                     <?php endif ; ?>
+                    <?php if ($info['anime'] !== null) : ?>
+                        <span class="badge rounded-pill bg-info">Anime</span>
+                    <?php endif ; ?>
                     <h5 class="card-title"><?= $info['title'] ?></h5>
                     <p class="card-text"><?= $info['desc'] ?></p>
                 </div>

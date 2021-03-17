@@ -40,6 +40,9 @@ ob_start();
             <br>
             <label for="gaming" class="form-check-label">Gaming : </label>
             <input type="checkbox" class="form-check-input" name="gaming" id="gaming">
+            <br>
+            <label for="anime" class="form-check-label">Anime : </label>
+            <input type="checkbox" class="form-check-input" name="anime" id="anime">
             <hr>
         </div>
         <div class="mb-3">
