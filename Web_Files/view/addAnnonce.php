@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/annonceInfoEncode"  enctype="multipart/form-data">
+    <form method="post" class="centerForm" action = "/myProfile/addAnnonce/annonceInfoEncode/"  enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Titre :</label>
             <input type="text" required class="form-control" name="title" id="title">

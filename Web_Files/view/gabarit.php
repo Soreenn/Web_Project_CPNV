@@ -38,7 +38,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     </li>
                     <li class="nav-item">
                         <?php if (isset($_SESSION['email'])) : ?>
-                            <a class="nav-link" href="/profile">Mon profile</a>
+                            <a class="nav-link" href="/myProfile">Mon profile</a>
                         <?php else : ?>
                             <a class="nav-link" href="/register">S'inscrire</a>
                         <?php endif; ?>

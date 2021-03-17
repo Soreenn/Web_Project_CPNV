@@ -16,7 +16,7 @@ $_SESSION['postId'] = $postId['postId']
     <?php if ($info['annonceId'] == $_SESSION['postId']) : ?>
         <?php $price = strtok($info['price'], ' CHF'); ?>
         <div class="center">
-            <form method="post" class="centerForm" action="/modAnnoncePush" enctype="multipart/form-data">
+            <form method="post" class="centerForm" action="/myProfile/modAnnonce/modAnnoncePost/modAnnoncePush/" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Titre :</label>
                     <input value="<?= $info['title'] ?>" type="text" required class="form-control" name="title"

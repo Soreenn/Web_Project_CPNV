@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/registerData" enctype="multipart/form-data">
+    <form method="post" class="centerForm" action = "/register/registerData/" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="userEmail" class="form-label">Entrez votre adresse mail</label>
             <input required type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp">

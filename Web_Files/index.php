@@ -15,81 +15,111 @@ require "controller/controller.php";
 switch ($_SERVER["REQUEST_URI"]) {
     case "/" :
     case "/home" :
+    case "/home/" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
             catalogue();
         }
         break;
+
     case "/login" :
+    case "/login/" :
         login();
         break;
-    case "/authentification" :
+
+    case "/login/authentification" :
+    case "/login/authentification/" :
         authentification($_POST);
         break;
+
     case "/register" :
+    case "/register/" :
         register();
         break;
+
     case "/logout" :
+    case "/logout/" :
         logout();
         break;
-    case "/registerData" :
+
+    case "/register/registerData" :
+    case "/register/registerData/" :
         registerData($_POST);
         break;
-    case "/addAnnonce":
+
+    case "/myProfile/addAnnonce":
+    case "/myProfile/addAnnonce/":
         if (!isset($_SESSION['email'])) {
             home();
         } else {
             addAnnonce();
         }
         break;
-    case "/profile" :
+
+    case "/myProfile" :
+    case "/myProfile/" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
             profil();
         }
         break;
-    case "/annonceInfoEncode" :
+
+    case "/myProfile/addAnnonce/annonceInfoEncode" :
+    case "/myProfile/addAnnonce/annonceInfoEncode/" :
         if (!isset($_POST)) {
             home();
         } else {
             annonceInfoEncode($_POST);
         }
-    case "/modAnnonce" :
+        break;
+
+    case "/myProfile/modAnnonce" :
+    case "/myProfile/modAnnonce/" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
             modAnnonce();
         }
         break;
-    case "/modAnnoncePost" :
+
+    case "/myProfile/modAnnonce/modAnnoncePost" :
+    case "/myProfile/modAnnonce/modAnnoncePost/" :
         if (!isset($_POST)) {
             home();
         } else {
             modAnnoncePost($_POST);
         }
         break;
-    case "/delAnnonce" :
+
+    case "/myProfile/delAnnonce" :
+    case "/myProfile/delAnnonce/" :
         if (!isset($_SESSION['email'])) {
             home();
         } else {
             delAnnonce();
         }
         break;
-    case "/delAnnonceArray" :
+
+    case "/myProfile/delAnnonce/delAnnonceArray" :
+    case "/myProfile/delAnnonce/delAnnonceArray/" :
         if (!isset($_POST)) {
             home();
         } else {
             delAnnonceArray($_POST);
         }
         break;
-    case "/modAnnoncePush" :
+
+    case "/myProfile/modAnnonce/modAnnoncePost/modAnnoncePush" :
+    case "/myProfile/modAnnonce/modAnnoncePost/modAnnoncePush/" :
         if (!isset($_POST)) {
             home();
         } else {
             modAnnoncePush($_POST);
         }
+        break;
+
     default:
         lost();
 }

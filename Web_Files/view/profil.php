@@ -19,17 +19,17 @@ $title = "Profile";
     </div>
     <!--Form start-->
     <div class="center">
-        <form method="post" class="centerForm" action="/addAnnonce">
+        <form method="post" class="centerForm" action="/myProfile/addAnnonce/">
             <button type="submit" class="btn btn-primary">Créer une annonce</button>
             <br>
             <br>
         </form>
-        <form method="post" class="centerForm" action="/modAnnonce">
+        <form method="post" class="centerForm" action="/myProfile/modAnnonce/">
             <button type="submit" class="btn btn-primary">Modifier une annonce</button>
             <br>
             <br>
         </form>
-            <form method="get" class="centerForm" action="/delAnnonce">
+            <form method="post" class="centerForm" action="/myProfile/delAnnonce/">
                 <button type="submit" class="btn btn-primary">Supprimer une annonce</button>
             </form>
     </div>
