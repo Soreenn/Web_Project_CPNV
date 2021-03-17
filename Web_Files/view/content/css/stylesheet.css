@@ -84,4 +84,11 @@ h3 {
 
 .alignPDP {
     margin-left: 70px;
+    padding-top: 30px;
+}
+
+.profil-title {
+    position: absolute;
+    margin-left: 183px;
+    text-transform: capitalize;
 }

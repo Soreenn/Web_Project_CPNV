@@ -9,13 +9,13 @@ $title = "Profile";
 ?>
 
     <div>
-        <div>
-            <h2>Profile de <?= $_SESSION['name'] ?></h2>
-        </div>
-        <br>
         <div class="alignPDP">
             <img src="<?= $_SESSION['pdp'] ?>" class="rounded-circle" style="width: 300px; height: 300px">
         </div>
+        <div>
+            <h2 class="profil-title"><?= $_SESSION['name'] ?></h2>
+        </div>
+        <br>
     </div>
     <!--Form start-->
     <div class="center">
