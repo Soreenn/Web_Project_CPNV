@@ -53,7 +53,7 @@ function dataAnnonce($annonceInfo)
     $file_name = $_FILES['img']['name'];
     $file_tmp = $_FILES['img']['tmp_name'];
     $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
-    if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
+    if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif' | $extension == 'JPG' || $extension == 'JPEG' || $extension == 'PNG' || $extension == 'GIF') {
         move_uploaded_file($file_tmp, "view/content/images/" . $file_name);
     } else {
         header_remove();
@@ -78,6 +78,7 @@ function dataAnnonce($annonceInfo)
             "info" => isset($annonceInfo['info']) ? $annonceInfo['info'] : null,
             "vehicle" => isset($annonceInfo['vehicle']) ? $annonceInfo['vehicle'] : null,
             "gaming" => isset($annonceInfo['gaming']) ? $annonceInfo['gaming'] : null,
+            "anime" => isset($annonceInfo['anime']) ? $annonceInfo['anime'] : null,
             "ownerFullEmail" => $_SESSION['email']
         );
     }
@@ -122,6 +123,7 @@ function modAnnonceEncode($annonceInfo)
             "info" => isset($annonceInfo['info']) ? $annonceInfo['info'] : null,
             "vehicle" => isset($annonceInfo['vehicle']) ? $annonceInfo['vehicle'] : null,
             "gaming" => isset($annonceInfo['gaming']) ? $annonceInfo['gaming'] : null,
+            "anime" => isset($annonceInfo['anime']) ? $annonceInfo['anime'] : null,
             "ownerFullEmail" => $_SESSION['email']
         );
     }

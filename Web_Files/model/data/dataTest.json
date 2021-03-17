@@ -3,5 +3,10 @@
         "email": "gabriel.machado-pereira@cpnv.ch",
         "password": "gabriel",
         "pdp": "view\/content\/images\/artwork.jpg"
+    },
+    {
+        "email": "test@cpnv.ch",
+        "password": "test",
+        "pdp": "view\/content\/images\/artwork.jpg"
     }
 ]

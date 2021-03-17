@@ -1,5 +1,4 @@
 <?php
-header_remove();
 /**
  * Author : Luke CORNAZ & Gabriel PEREIRA
  * Date : 12.02.2021
