@@ -4,6 +4,7 @@
  * Date : 12.02.2021
  * Version : 0.1
  */
+header_remove();
 ob_start();
 $title = "Catalogue";
 ?>

@@ -1,6 +1,5 @@
-
 <?php
-
+header_remove();
 /**
  * Author : Luke CORNAZ & Gabriel PEREIRA
  * Date : 12.02.2021
@@ -46,8 +45,8 @@ function addAnnonce(){
 function logout(){
     session_start();
     session_destroy();
+    header_remove();
     header("Location: /home");
-    require "view/home.php";
 }
 
 function annonceInfoEncode($annonceInfo){
@@ -71,8 +70,18 @@ function modAnnoncePost($postId){
     require "view/modAnnoncePost.php";
 }
 
-function delAnnoncePost(){
+function delAnnonce(){
     require "model/data_decode.php";
     $data = getAnnounce();
-    require "view/modAnnoncePost.php";
+    require "view/delAnnonce.php";
+}
+
+function modAnnoncePush($data){
+    require "model/data_encode.php";
+    modAnnonceEncode($data);
+}
+
+function delAnnonceArray($postId){
+    require "model/data_decode.php";
+    deletePost($postId);
 }

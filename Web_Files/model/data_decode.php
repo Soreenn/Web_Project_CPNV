@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 function loginUser($userData)
 {
@@ -27,10 +30,8 @@ function loginUser($userData)
                     $_SESSION['pdp'] = $row['pdp'];
                 }
                 header("Location: /home");
-                require "view/home.php";
             } else {
                 header("Location: /login");
-                require "view/login.php";
             }
         }
     }
@@ -38,7 +39,31 @@ function loginUser($userData)
 
 function getAnnounce()
 {
-    $data = file_get_contents("model/data/annonce.json", true);
+    $data = file_get_contents("model/data/annonce.json");
     $data = json_decode($data, true);
     return $data;
+}
+
+function deletePost($postId)
+{
+    $data = file_get_contents("model/data/annonce.json");
+    $data = json_decode($data, true);
+    $arr_index = array();
+
+    foreach ($data as $key => $value) {
+        if ($value['annonceId'] == $postId['postId']) {
+            $arr_index[] = $key;
+        }
+    }
+
+    foreach ($arr_index as $i) {
+        unset($data[$i]);
+    }
+
+    $data = array_values($data);
+
+    $data = json_encode($data, JSON_PRETTY_PRINT);
+    file_put_contents("model/data/annonce.json", $data);
+
+    header("Location: /home");
 }

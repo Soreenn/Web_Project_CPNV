@@ -44,7 +44,7 @@ ob_start();
         </div>
         <div class="mb-3">
             <label for="img">Photo de l'annonce : </label>
-            <input class="form-control form-control-sm" type="file" id="img" name="img">
+            <input required class="form-control form-control-sm" type="file" id="img" name="img">
         </div>
         <div class="mb-3">
             <input required type="checkbox" class="form-check-input" name="accept" id="accept">

@@ -1,13 +1,13 @@
 <?php
 /**
  * Author : Luke CORNAZ & Gabriel PEREIRA
- * Date : 12.02.2021
+ * Date : 10.03.2021
  * Version : 0.1
  */
 ob_start();
-$title = "Supprimer annonce";
+$title = "Modifier annonce";
 ?>
-    <!--Delete start-->
+    <!--Add start-->
     <html>
     <head>
         <meta charset="utf-8">
@@ -15,7 +15,7 @@ $title = "Supprimer annonce";
     <body>
     <?php foreach ($data as $info) : ?>
         <?php if ($info['ownerFullEmail'] == $_SESSION['email']) : ?>
-            <form class="center" method="post" action="/delAnnoncePost">
+            <form class="center" method="post" action="/delAnnonceArray" enctype="multipart/form-data">
                 <input class="form-check-input" type="hidden" name="postId" value="<?= $info['annonceId'] ?>">
                 <label style="font-size: 20px" class="form-check-label"><?= $info['title'] ?></label>
                 <br>
@@ -23,7 +23,7 @@ $title = "Supprimer annonce";
             </form>
         <?php endif; ?>
     <?php endforeach; ?>
-    <!--Delete end-->
+    <!--Add end-->
     </body>
     </html>
 

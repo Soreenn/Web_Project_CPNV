@@ -6,9 +6,6 @@
  */
 ob_start();
 $title = "Accueil";
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 ?>
 
     <!--Home start-->
@@ -17,8 +14,6 @@ if (session_status() === PHP_SESSION_NONE) {
         <meta charset="utf-8">
     </head>
 <body>
-
-<?php if (!isset($_SESSION['email'])) : ?>
     <div class="home">
         <div class="center">
             <h1>Ali-Bis</h1>
@@ -29,12 +24,9 @@ if (session_status() === PHP_SESSION_NONE) {
             <small>Pas de compte ? <a href="/view/register.php">Créez en un !</a></small>
         </div>
     </div>
-<?php endif; ?>
-
     </body>
     </html>
     <!--Home end-->
-
     <?php
     $content = ob_get_clean();
     require "view/gabarit.php";
