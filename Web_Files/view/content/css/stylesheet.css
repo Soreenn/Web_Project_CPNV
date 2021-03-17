@@ -92,3 +92,7 @@ h3 {
     margin-left: 183px;
     text-transform: capitalize;
 }
+
+.image{
+    position: center;
+}

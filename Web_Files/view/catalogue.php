@@ -20,7 +20,9 @@ $title = "Catalogue";
         <?php foreach ($data as $info) : ?>
         <div class="col">
             <div class="card h-100">
-                <img src="<?= $info['img'] ?>" class="card-img-top" alt="...">
+                <div class="image">
+                <img style="width: 300px;height: 300px; object-fit: cover; object-position: 100% 0;" src="<?= $info['img'] ?>" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
                     <?php if ($info['animaux'] !== null) : ?>
                     <span class="badge rounded-pill bg-success">Animaux</span>
