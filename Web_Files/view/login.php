@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/login/authentification/">
+    <form method="post" class="centerForm was-validated" action = "/login/authentification/">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Adresse e-mail :</label>
             <input required type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">

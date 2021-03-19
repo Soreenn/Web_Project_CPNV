@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/myProfile/addAnnonce/annonceInfoEncode/"  enctype="multipart/form-data">
+    <form method="post" class="centerForm was-validated" action = "/myProfile/addAnnonce/annonceInfoEncode/"  enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Titre :</label>
             <input type="text" required class="form-control" name="title" id="title">
@@ -29,19 +29,19 @@ ob_start();
             <label for="tags" class="form-label">Tags :</label>
             <input type="hidden" id="tags">
             <hr>
-            <label for="animaux" class="form-check-label">Animaux : </label>
+            <label for="animaux" style="color: black" class="form-check-label">Animaux : </label>
             <input type="checkbox" class="form-check-input" name="animaux" id="animaux">
             <br>
-            <label for="vehicle" class="form-check-label">Véhicule : </label>
+            <label for="vehicle" style="color: black" class="form-check-label">Véhicule : </label>
             <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">
             <br>
-            <label for="info" class="form-check-label">Informatique : </label>
+            <label for="info" style="color: black" class="form-check-label">Informatique : </label>
             <input type="checkbox" class="form-check-input" name="info" id="info">
             <br>
-            <label for="gaming" class="form-check-label">Gaming : </label>
+            <label for="gaming" style="color: black" class="form-check-label">Gaming : </label>
             <input type="checkbox" class="form-check-input" name="gaming" id="gaming">
             <br>
-            <label for="anime" class="form-check-label">Anime : </label>
+            <label for="anime" style="color: black" class="form-check-label">Anime : </label>
             <input type="checkbox" class="form-check-input" name="anime" id="anime">
             <hr>
         </div>

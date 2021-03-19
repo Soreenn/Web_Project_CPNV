@@ -43,11 +43,6 @@ switch ($_SERVER["REQUEST_URI"]) {
         logout();
         break;
 
-    case "/register/registerData" :
-    case "/register/registerData/" :
-        registerData($_POST);
-        break;
-
     case "/myProfile/addAnnonce":
     case "/myProfile/addAnnonce/":
         if (!isset($_SESSION['email'])) {
@@ -119,7 +114,17 @@ switch ($_SERVER["REQUEST_URI"]) {
             modAnnoncePush($_POST);
         }
         break;
-
+    case "/varify_captcha.php" :
+        varify_captcha($_POST);
+        break;
+    case "/home/aboutAnnounce" :
+    case "/home/aboutAnnounce/" :
+        aboutAnnounce($_POST);
+        break;
+    case "/formulaireDeContact" :
+    case "/formulaireDeContact/" :
+        formulaireDeContact($_POST);
+        break;
     default:
         lost();
 }

@@ -16,6 +16,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/view/content/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/view/content/css/stylesheet.css">
+    <script src='https://www.google.com/recaptcha/api.js' async defer ></script>
 </head>
 <body>
 
@@ -23,6 +24,18 @@ if (session_status() === PHP_SESSION_NONE) {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="/home">Ali-Bis</a>
+        <div class="navbar-text">
+            <?php if ($_SERVER["REQUEST_URI"] == "/home/aboutAnnounce") : ?>
+                <div class="container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/home/">Home</a></li>
+                            <li class="breadcrumb-item">Détails</li>
+                        </ol>
+                    </nav>
+                </div>
+            <?php endif; ?>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

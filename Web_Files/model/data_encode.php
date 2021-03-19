@@ -44,6 +44,7 @@ function addUser($userData)
             $_SESSION['pdp'] = "view/content/images/" . $file_name;
         }
 
+        unset($_SESSION['Register']);
         header("Location: /home");
     }
 }

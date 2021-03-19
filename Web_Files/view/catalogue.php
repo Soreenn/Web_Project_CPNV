@@ -21,7 +21,7 @@ $title = "Catalogue";
         <div class="col">
             <div class="card h-100">
                 <div class="image">
-                <img style="width: 300px;height: 300px; object-fit: cover; object-position: 100% 0;" src="<?= $info['img'] ?>" class="card-img-top" alt="...">
+                <img style="width: 300px;height: 300px; object-fit: cover; object-position: 100% 0;" src="/<?= $info['img'] ?>" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body">
                     <?php if ($info['animaux'] !== null) : ?>
@@ -41,6 +41,10 @@ $title = "Catalogue";
                     <?php endif ; ?>
                     <h5 class="card-title"><?= $info['title'] ?></h5>
                     <p class="card-text"><?= $info['desc'] ?></p>
+                    <form method="post" action="/home/aboutAnnounce">
+                        <input type="hidden" value="<?= $info['annonceId'] ?>" name="postId">
+                        <input class="btn btn-secondary" type="submit" value="Voir plus à propos" name="seeMore" id="seeMore">
+                    </form>
                 </div>
                 <div class="card-footer">
                     <small> <?= $info['price'] ?> </small>

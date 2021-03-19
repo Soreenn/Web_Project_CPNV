@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/register/registerData/" enctype="multipart/form-data">
+    <form class="centerForm was-validated"  action="varify_captcha.php" method="POST" novalidate="novalidate" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="userEmail" class="form-label">Entrez votre adresse mail</label>
             <input required type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp">
@@ -28,11 +28,13 @@ ob_start();
         </div>
         <div class="mb-3">
             <label for="img">Photo de profile : </label>
-            <input class="form-control form-control-sm" type="file" id="img" name="img">
+            <input required class="form-control form-control-sm" type="file" id="img" name="img">
         </div>
         <div class="alignLeft">
             <p>Vous possédez déjà un compte ? <a href="/login">Se connecter</a>.</p>
         </div>
+        <br>
+        <div class="g-recaptcha" data-sitekey="6LcTpIQaAAAAAMI5P1Vuy4FlfgK4u85IF5V-bng9"></div>
         <br>
         <button type="submit" class="btn btn-primary">S'inscrire</button>
         <br>

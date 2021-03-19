@@ -44,6 +44,13 @@ function getAnnounce()
     return $data;
 }
 
+function getUsers()
+{
+    $data = file_get_contents("model/data/dataTest.json");
+    $data = json_decode($data, true);
+    return $data;
+}
+
 function deletePost($postId)
 {
     $data = file_get_contents("model/data/annonce.json");
