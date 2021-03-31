@@ -44,7 +44,7 @@ $title = "Détails";
                         <span class="badge rounded-pill bg-warning">Jouet</span>
                     <?php endif; ?>
                     <?php if ($info['location'] !== null) : ?>
-                        <span class="badge rounded-pill bg-sucess">Location</span>
+                        <span class="badge rounded-pill bg-success">Location</span>
                     <?php endif; ?>
                 </div>
                 <div class="card-body">

@@ -53,7 +53,7 @@ $pattern = "/^.*?" . $search['search'] . ".*?$/i";
                             <span class="badge rounded-pill bg-warning">Jouet</span>
                         <?php endif; ?>
                         <?php if ($info['location'] !== null) : ?>
-                            <span class="badge rounded-pill bg-sucess">Location</span>
+                            <span class="badge rounded-pill bg-success">Location</span>
                         <?php endif; ?>
                         <h5 class="card-title"><?= $info['title'] ?></h5>
                         <form method="post" action="/home/aboutAnnounce">
