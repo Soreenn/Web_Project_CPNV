@@ -79,11 +79,6 @@ if (session_status() === PHP_SESSION_NONE) {
                             <?php endif; ?>
                         </td>
                     </form>
-                    <td>
-                        <?php if (isset($_SESSION['email'])) : ?>
-                            <span class="nav-link"> Ou </span>
-                        <?php endif; ?>
-                    </td>
                 </table>
             </li>
             <li class="nav-item">
