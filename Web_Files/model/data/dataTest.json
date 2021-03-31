@@ -1,16 +1,23 @@
 [
     {
-        "email": "test@cpnv.ch",
-        "password": "test"
-    },
-    {
         "email": "gabriel.machado-pereira@cpnv.ch",
-        "password": "test",
-        "pdp": "view\/content\/images\/large.gif"
+        "password": "$2y$10$zVfVygDpzD.G3gLrsS8tNuOjUw5GnLvChVAhEotAvJDUEDdQaGc6q",
+        "bio": "Hello! I'm an admin of this site!",
+        "pdp": "view\/content\/images\/Capture.JPG",
+        "admin": "on"
     },
     {
         "email": "luke.cornaz@cpnv.ch",
-        "password": "luke",
-        "pdp": "view\/content\/images\/Benimaru.png"
+        "password": "$2y$10$bksHLB39nW3US37M4IKl0.\/aU.XDXODcLS\/\/NmMwazwHjRlwF3UVq",
+        "bio": "Welcome to you!",
+        "pdp": "view\/content\/images\/Benimaru.png",
+        "admin": "on"
+    },
+    {
+        "email": "davidsilvasoare@gmail.com",
+        "password": "$2y$10$n4rDtJcw.uMu9RAEkrAWTOoS1hNSFMWJMtjUtsA1uXmqg4kwWmrHG",
+        "bio": "Welcome to you!",
+        "pdp": "view\/content\/images\/117_1000.jpg",
+        "admin": "off"
     }
 ]

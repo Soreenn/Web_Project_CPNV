@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 function loginUser($userData)
 {
@@ -10,9 +13,16 @@ function loginUser($userData)
     $i = 0;
     $id = -1;
 
+    $pattern = "/^[a-zA-Z.-]+@[a-zA-Z.-]+\.[a-zA-Z]+$/i";
+    if (!preg_match($pattern, $userData['email'])){
+        header_remove();
+        header("Location: /home");
+        exit();
+    }
+
     foreach ($data as $row) {
         if ($row['email'] == $userData['email']) {
-            if ($row['password'] == $userData['password']) {
+            if (password_verify($userData['password'], $row['password']) == true) {
 
                 if (substr_count($userData['email'], ".") > 1) {
                     $name = strtok($userData['email'], '.');
@@ -25,12 +35,11 @@ function loginUser($userData)
                     $_SESSION['email'] = $userData['email'];
                     $_SESSION['name'] = $name;
                     $_SESSION['pdp'] = $row['pdp'];
+                    $_SESSION['admin'] = $row['admin'];
                 }
                 header("Location: /home");
-                require "view/home.php";
             } else {
                 header("Location: /login");
-                require "view/login.php";
             }
         }
     }
@@ -38,7 +47,45 @@ function loginUser($userData)
 
 function getAnnounce()
 {
-    $data = file_get_contents("model/data/annonce.json", true);
+    $data = file_get_contents("model/data/annonce.json");
     $data = json_decode($data, true);
     return $data;
+}
+
+function getUsers()
+{
+    $data = file_get_contents("model/data/dataTest.json");
+    $data = json_decode($data, true);
+    return $data;
+}
+
+function getCart()
+{
+    $data = file_get_contents("model/data/cart.json");
+    $data = json_decode($data, true);
+    return $data;
+}
+
+function deletePost($postId)
+{
+    $data = file_get_contents("model/data/annonce.json");
+    $data = json_decode($data, true);
+    $arr_index = array();
+
+    foreach ($data as $key => $value) {
+        if ($value['annonceId'] == $postId['postId']) {
+            $arr_index[] = $key;
+        }
+    }
+
+    foreach ($arr_index as $i) {
+        unset($data[$i]);
+    }
+
+    $data = array_values($data);
+
+    $data = json_encode($data, JSON_PRETTY_PRINT);
+    file_put_contents("model/data/annonce.json", $data);
+
+    header("Location: /home");
 }

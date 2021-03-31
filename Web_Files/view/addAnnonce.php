@@ -12,7 +12,7 @@ ob_start();
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/annonceInfoEncode"  enctype="multipart/form-data">
+    <form method="post" class="centerForm was-validated" action = "/myProfile/addAnnonce/annonceInfoEncode/"  enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Titre :</label>
             <input type="text" required class="form-control" name="title" id="title">
@@ -26,25 +26,41 @@ ob_start();
             <input type="number" required class="form-control" name="price" id="price">
         </div>
         <div class="mb-3">
-            <label for="tags" class="form-label">Tags :</label>
-            <input type="hidden" id="tags">
-            <hr>
-            <label for="animaux" class="form-check-label">Animaux : </label>
-            <input type="checkbox" class="form-check-input" name="animaux" id="animaux">
-            <br>
-            <label for="vehicle" class="form-check-label">Véhicule : </label>
-            <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">
-            <br>
-            <label for="info" class="form-check-label">Informatique : </label>
-            <input type="checkbox" class="form-check-input" name="info" id="info">
-            <br>
-            <label for="gaming" class="form-check-label">Gaming : </label>
-            <input type="checkbox" class="form-check-input" name="gaming" id="gaming">
-            <hr>
+            <div class="mb-3">
+                <label for="tags" class="form-label">Tags :</label>
+                <input type="hidden" id="tags">
+                <hr>
+                <label for="animaux" style="color: black" class="form-check-label">Animaux : </label>
+                <input type="checkbox" class="form-check-input" name="animaux" id="animaux">
+                <br>
+                <label for="vehicle" style="color: black" class="form-check-label">Véhicule : </label>
+                <input type="checkbox" class="form-check-input" name="vehicle" id="vehicle">
+                <br>
+                <label for="info" style="color: black" class="form-check-label">Informatique : </label>
+                <input type="checkbox" class="form-check-input" name="info" id="info">
+                <br>
+                <label for="mobilier" style="color: black" class="form-check-label">Mobilier : </label>
+                <input type="checkbox" class="form-check-input" name="mobilier" id="mobilier">
+                <br>
+                <label for="manga" style="color: black" class="form-check-label">Manga : </label>
+                <input type="checkbox" class="form-check-input" name="manga" id="manga">
+                <br>
+                <label for="service" style="color: black" class="form-check-label">Service : </label>
+                <input type="checkbox" class="form-check-input" name="service" id="service">
+                <br>
+                <label for="jouet" style="color: black" class="form-check-label">Jouet : </label>
+                <input type="checkbox" class="form-check-input" name="jouet" id="jouet">
+                <br>
+                <label for="location" style="color: #000000" class="form-check-label">Location : </label>
+                <input type="checkbox" class="form-check-input" name="location" id="location">
+                <hr>
+            </div>
         </div>
         <div class="mb-3">
             <label for="img">Photo de l'annonce : </label>
-            <input class="form-control form-control-sm" type="file" id="img" name="img">
+            <br>
+            <label for="img">Taille idéal (300x300)</label>
+            <input required class="form-control form-control-sm" type="file" id="img" name="img">
         </div>
         <div class="mb-3">
             <input required type="checkbox" class="form-check-input" name="accept" id="accept">

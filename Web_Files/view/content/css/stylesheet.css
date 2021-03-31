@@ -2,6 +2,7 @@
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
+    margin-left: 10px;
 }
 
 .navbar-dark .navbar-nav .nav-item {
@@ -11,7 +12,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-item {
-    margin: 0 15px;
+    margin: 15px 15px;
 }
 
 .home {
@@ -20,6 +21,7 @@
 }
 
 .center {
+    table-layout: fixed;
     max-width: 64em;
     margin: auto;
     text-align: center;
@@ -74,14 +76,46 @@ h3 {
     color: white;
 }
 
-.navbar-toggler {
-    margin-left: 90%;
+.image{
+    position: center;
 }
 
-.container-fluid\.catalogue{
-    max-width:1170px;
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55em
 }
 
-.alignPDP {
-    margin-left: 70px;
+.navbar-text{
+    margin-right: 1150px;
+}
+
+.breadcrumb-item{
+    margin-top: 15px;
+}
+
+.boutonAlign {
+    display: inline-block;
+    margin: 5%;
+}
+
+.textPolice {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+body{
+    background-image: url("/view/content/images/wallpaper.png");
+    background-repeat: repeat;
+}
+
+.long-bar {
+    width: 600px;
+}
+
+.tableCart{
+    table-layout: fixed;
+    max-width: 2000px;
+    margin: auto;
+    text-align: center;
 }

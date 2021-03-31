@@ -4,15 +4,15 @@
  * Date : 12.02.2021
  * Version : 0.1
  */
-$title = 'Login';
-
+$title = 'Connexion';
+header_remove();
 ob_start();
 ?>
 <h2>Connexion</h2>
 <br>
 <!--Form start-->
 <div class="center">
-    <form method="post" class="centerForm" action = "/authentification">
+    <form method="post" class="centerForm was-validated" action = "/login/authentification/">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Adresse e-mail :</label>
             <input required type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
