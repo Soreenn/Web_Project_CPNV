@@ -16,6 +16,9 @@ $_SESSION['name'] = htmlentities($_SESSION['name']);
         <br>
         <div>
             <img src="/<?= $_SESSION['pdp'] ?>" class="rounded-circle" style="width: 300px; height: 300px">
+            <?php if ($_SESSION['admin'] == "on") : ?>
+                <h1><span class="badge bg-danger">ADMIN</span></h1>
+            <?php endif; ?>
         </div>
         <br>
         <br>
@@ -35,12 +38,13 @@ $_SESSION['name'] = htmlentities($_SESSION['name']);
         <br>
         <?php foreach ($data as $info) : ?>
             <?php if ($info['email'] == $_SESSION['email']) : ?>
-            <?php $info['bio'] = htmlentities($info['bio']); ?>
+                <?php $info['bio'] = htmlentities($info['bio']); ?>
                 <form method="post" action="/myProfile/saveBio/">
                     <label for="ameliorer" class="textPolice">Partagez votre humeur !</label>
                     <br>
                     <br>
-                    <textarea style="resize: none" class="form-control"  name="ameliorer" id="ameliorer" rows="7" cols="100"><?= $info['bio'] ?></textarea>
+                    <textarea style="resize: none" class="form-control" name="ameliorer" id="ameliorer" rows="7"
+                              cols="100"><?= $info['bio'] ?></textarea>
                     <br>
                     <button type="submit" class="btn btn-secondary">Sauvegarder</button>
                 </form>

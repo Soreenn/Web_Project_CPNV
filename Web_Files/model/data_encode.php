@@ -10,7 +10,7 @@ function addUser($userData)
     $file_tmp = $_FILES['img']['tmp_name'];
     $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
-        move_uploaded_file($file_tmp, "view/content/images/" . $file_name . $_SESSION['email']);
+        move_uploaded_file($file_tmp, "view/content/images/" . date("d-m-y_H-m-s") . $file_name);
     } else {
         header_remove();
         header("Location: /register");
@@ -67,7 +67,7 @@ function dataAnnonce($annonceInfo)
     $file_tmp = $_FILES['img']['tmp_name'];
     $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif' | $extension == 'JPG' || $extension == 'JPEG' || $extension == 'PNG' || $extension == 'GIF') {
-        move_uploaded_file($file_tmp, "view/content/images/" . $file_name . $_SESSION['email']);
+        move_uploaded_file($file_tmp, "view/content/images/" .  date("d-m-y_H-m-s") . $file_name);
     } else {
         header_remove();
         header("Location: /home");
@@ -116,7 +116,7 @@ function modAnnonceEncode($annonceInfo)
     $file_tmp = $_FILES['img']['tmp_name'];
     $extension = pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
     if ($extension == 'jpg' || $extension == 'jpeg' || $extension == 'png' || $extension == 'gif') {
-        move_uploaded_file($file_tmp, "view/content/images/" . $file_name . $_SESSION['email']);
+        move_uploaded_file($file_tmp, "view/content/images/" .  date("d-m-y_H-m-s") . $file_name);
     } else {
         header_remove();
         header("Location: /home");
