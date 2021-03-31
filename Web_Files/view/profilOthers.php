@@ -31,6 +31,9 @@ $title = "Profile";
             <br>
             <div>
                 <img src="/<?= $info['pdp'] ?>" class="rounded-circle" style="width: 300px; height: 300px">
+                <?php if ($info['admin'] == "on") : ?>
+                    <h1><span class="badge bg-danger">ADMIN</span></h1>
+                <?php endif; ?>
             </div>
             <br>
             <br>
